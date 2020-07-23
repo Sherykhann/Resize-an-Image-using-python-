@@ -1,0 +1,17 @@
+import os
+from PIL import Image
+
+
+
+img_path = "C:/Users/Shehryar khan/PycharmProjects/codemy/IM-0001-0001.JPEG"
+
+im = Image.open(img_path)
+width,height = im.size
+print(width,height)
+im.show()
+#Lets resize the image
+im1=im.resize((400,400))
+width1,height1 = im1.size
+print(width1,height1)
+#print(im.size())
+im1.show()
